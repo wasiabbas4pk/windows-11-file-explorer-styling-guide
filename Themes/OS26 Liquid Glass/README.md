@@ -13,22 +13,31 @@ This theme modifies key elements in the Windows 11 File Explorer to achieve a sl
 The standard layout for the sleek, premium OS26 inspired Liquid Glass aesthetic. 
 
 **Explorer Previews**
+
 ![preview-1](screenshot-default.png)
+
 ![preview-2](screenshot-2-default.png)
 
 **Context Menu Previews**
+
 ![Context-Menu-1](context-menu-1-default.png)
+
 ![Context-Menu-2](context-menu-2-default.png)
 
 ### Compact
+
 Modifies key elements and their layout in the Windows 11 File Explorer to make them look like a Compact OS26 inspired Liquid Glass aesthetic with fluent UI.
 
 **Explorer Previews**
+
 ![preview-1](screenshot-compact.png)
+
 ![preview-2](screenshot-2-compact.png)
 
 **Context Menu Previews**
+
 ![Context-Menu-1](context-menu-1-compact.png)
+
 ![Context-Menu-2](context-menu-2-compact.png)
 
 ---
