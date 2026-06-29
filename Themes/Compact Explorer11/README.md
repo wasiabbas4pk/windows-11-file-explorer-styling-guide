@@ -56,7 +56,7 @@ To test or apply this theme manually right now:
 3. Clear the text area, copy the complete configuration block below, paste it inside, and hit **"Save settings"**.
 
 <details>
-<summary> Click to expand theme configuration code</summary>
+<summary> Content to import (click to expand)</summary>
 
 ```yaml
 theme: ''
