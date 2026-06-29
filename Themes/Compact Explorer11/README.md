@@ -29,16 +29,19 @@ Here is a preview of the codes that can be used:
 * **Tint Code 1:** `761E1E1E`
 
   Preview: 
+  
   ![tint-1](tint-1.png) 
 
 * **Tint Code 2:** `B31A1A1A`
 
   Preview: 
+  
   ![tint-2](tint-2.png) 
 
 * **Tint Code 3 (Default):** `3A232323`
 
   Preview:
+  
   ![tint-3](tint-3.png) 
 
 ---
@@ -53,7 +56,7 @@ To test or apply this theme manually right now:
 3. Clear the text area, copy the complete configuration block below, paste it inside, and hit **"Save settings"**.
 
 <details>
-<summary> Click to expand theme configuration code</summary>
+<summary> Content to import (click to expand)</summary>
 
 ```yaml
 theme: ''
@@ -65,9 +68,9 @@ controlStyles:
   - target: Microsoft.UI.Xaml.Controls.Primitives.SuggestionsPopup
     styles:
       - Margin=0,0,0,900
+
   - target: Microsoft.UI.Xaml.Controls.AppBarButton > Grid@CommonStates
     styles:
-      - Background@Disabled:=<WindhawkBlur BlurAmount="8" TintColor="#25ffffff"/>
       - Background@Disabled:=<WindhawkBlur BlurAmount="8" TintColor="#25ffffff"/>
       - CornerRadius@Disabled=10
       - BorderThickness@Disabled=1
@@ -83,7 +86,6 @@ controlStyles:
       - Width=45
       - Height=32
 
-
   - target: Microsoft.UI.Xaml.Controls.AppBarButton#backButton > Grid@CommonStates
     styles:
       - Background@Disabled:=<WindhawkBlur BlurAmount="8" TintColor="#25ffffff"/>
@@ -93,6 +95,7 @@ controlStyles:
       - Height@Disabled=32
       - Width@Disabled=20
       - Padding@Disabled=0,-2,0,2
+
   - target: Microsoft.UI.Xaml.Controls.AppBarButton#forwardButton > Grid@CommonStates
     styles:
       - Background@Disabled:=<WindhawkBlur BlurAmount="8" TintColor="#25ffffff"/>
@@ -102,6 +105,7 @@ controlStyles:
       - Height@Disabled=32
       - Width@Disabled=20
       - Padding@Disabled=0,-2,0,2
+
   - target: Microsoft.UI.Xaml.Controls.AppBarButton#refreshButton > Grid@CommonStates
     styles:
       - Background@Disabled:=<WindhawkBlur BlurAmount="8" TintColor="#25ffffff"/>
@@ -111,6 +115,7 @@ controlStyles:
       - Height@Disabled=32
       - Width@Disabled=20
       - Padding@Disabled=0,-2,0,2
+
   - target: Microsoft.UI.Xaml.Controls.AppBarToggleButton > Grid@CommonStates
     styles:
       - Background@Disabled:=<WindhawkBlur BlurAmount="8" TintColor="#2D101010"/>
@@ -163,8 +168,6 @@ controlStyles:
       - Background:=transparent
       - CornerRadius=15
 
-  # CommandBar: left-aligned, auto width so it only takes what it needs
-  # This avoids overlapping the tab strip and removes the need to shift tabs
   - target: CommandBar#FileExplorerCommandBar
     styles:
       - Grid.Row=0
@@ -175,16 +178,12 @@ controlStyles:
       - Background:=transparent
       - Padding=0,0,0,0
 
-  # FIX 1: Target the overflow separator — this is the actual element
-  # creating the visual gap between the last icon and the MoreButton.
-  # Collapsing it with Width=0 removes the reserved layout space entirely.
   - target: CommandBar#FileExplorerCommandBar > Grid#LayoutRoot > Grid#ContentRoot > Grid#OverflowSeparator
     styles:
       - Visibility=Collapsed
       - Width=0
       - MinWidth=0
 
-  # Also left-align the items container so MoreButton hugs the last icon
   - target: CommandBar#FileExplorerCommandBar > Grid#LayoutRoot > Grid#ContentRoot
     styles:
       - HorizontalAlignment=Left
@@ -198,10 +197,6 @@ controlStyles:
       - Visibility=Visible
       - Margin=0,40,0,-20
 
-  # FIX 2: Remove the Margin shift entirely — shifting via Margin moves
-  # the visual but NOT the parent container's hit region, creating a dead
-  # zone that eats drag input. Instead, the CommandBar's natural auto-width
-  # (HorizontalAlignment=Left above) will leave the tab strip space free.
   - target: Grid#TabContainerGrid
     styles:
       - Margin=370,1,0,1
@@ -217,7 +212,6 @@ controlStyles:
   - target: TabViewItem
     styles:
       - Width=150
-
       - Height=40
       - Margin=0,0,8,0
 
@@ -287,6 +281,14 @@ controlStyles:
   - target: Microsoft.UI.Xaml.Controls.Grid#FileExplorerAddressBarGrid
     styles:
       - Margin=-8,0,90,0
+
+
+  - target: CommandBarOverflowPresenter#SecondaryItemsControl > Microsoft.UI.Xaml.Controls.AppBarButton
+    styles:
+      - Background=Transparent
+      - CornerRadius=4
+      - BorderThickness=0
+      - Margin=0,0,0,0
 
   - target: Microsoft.UI.Xaml.Controls.AppBarButton
     styles:
