@@ -29,16 +29,19 @@ Here is a preview of the codes that can be used:
 * **Tint Code 1:** `761E1E1E`
 
   Preview: 
+  
   ![tint-1](tint-1.png) 
 
 * **Tint Code 2:** `B31A1A1A`
 
   Preview: 
+  
   ![tint-2](tint-2.png) 
 
 * **Tint Code 3 (Default):** `3A232323`
 
   Preview:
+  
   ![tint-3](tint-3.png) 
 
 ---
