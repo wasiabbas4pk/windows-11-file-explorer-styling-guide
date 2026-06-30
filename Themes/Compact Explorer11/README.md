@@ -1,5 +1,7 @@
 # Compact Explorer11 Style
 
+Author: [wasiabbas4pk](https://github.com/wasiabbas4pk)
+
 This style modifies Windows 11 File Explorer to make it compact, and occupy less space vertically and look better.
 
 ## Explorer Previews
