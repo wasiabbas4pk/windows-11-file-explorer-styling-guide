@@ -21,7 +21,6 @@ The standard layout for the sleek, premium OS26 inspired Liquid Glass aesthetic.
 
 ![Context-Menu-1](context-menu-1-default.png)
 
-![Context-Menu-2](context-menu-2-default.png)
 
 ## Compact
 
@@ -37,7 +36,6 @@ Modifies key elements and their layout in the Windows 11 File Explorer to make t
 
 ![Context-Menu-1](context-menu-1-compact.png)
 
-![Context-Menu-2](context-menu-2-compact.png)
 
 ---
 
